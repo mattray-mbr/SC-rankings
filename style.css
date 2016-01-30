@@ -41,11 +41,12 @@ body {
 	list-style: none;
 	margin-right: 50px;
 }
-.filter {
+.sort {
 	width: 90%;
 	height: 20px;
 	background-color: #fff;
 	border-radius: 5px;
+	margin: 0 auto;
 }
 .player-ranking {
 	width: 97%;
@@ -58,4 +59,40 @@ body {
 }
 .table {
 	background-color: #fff;
+	margin: 10px auto;
+	width: 90%;
+	border-radius: 5px;
 }
+.table thead {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

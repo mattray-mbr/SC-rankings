@@ -1,15 +1,17 @@
 var app = angular.module('starcraftApp', [])
 	app.controller('starController', ['$scope', function($scope){
 
-		console.log('hello')
 		$scope.top = allData.cols
 		$scope.all = allData.data
 
+		$scope.regionSort = function(){
+			_(allData.data).sortBy(function(a){
+				return a[2];
+			});
+			
+		}
 
 	}]);
-
-
-
 
 	var allData = {
     "cols": [
@@ -29,190 +31,29 @@ var app = angular.module('starcraftApp', [])
         [ "scelerisque", "Olivia Ruiz", "America", "Terran", 283, 24 ],
         [ "varius", "Ulla Boyer", "Korea", "Protoss", 362, 437 ],
         [ "nisi", "Giacomo Holden", "Korea", "Zerg", 41, 461 ],
-        [
-            "tempus",
-            "Palmer Barton",
-            "Korea",
-            "Terran",
-            489,
-            249
-        ],
-        [
-            "Cras",
-            "Quamar Benson",
-            "Korea",
-            "Protoss",
-            451,
-            27
-        ],
-        [
-            "Aliquam",
-            "Ali Robbins",
-            "Europe",
-            "Zerg",
-            445,
-            306
-        ],
-        [
-            "non",
-            "Alan Osborne",
-            "Korea",
-            "Terran",
-            36,
-            455
-        ],
-        [
-            "neque",
-            "Martena Sykes",
-            "Europe",
-            "Zerg",
-            94,
-            426
-        ],
-        [
-            "Phasellus",
-            "Lana Reed",
-            "Europe",
-            "Protoss",
-            423,
-            186
-        ],
-        [
-            "mauris",
-            "Gil Dyer",
-            "Korea",
-            "Zerg",
-            87,
-            290
-        ],
-        [
-            "mi",
-            "Basil Moses",
-            "America",
-            "Zerg",
-            486,
-            95
-        ],
-        [
-            "nisl",
-            "Cullen Hale",
-            "Korea",
-            "Terran",
-            372,
-            359
-        ],
-        [
-            "sit",
-            "Roary Martin",
-            "Korea",
-            "Protoss",
-            406,
-            111
-        ],
-        [
-            "ullamcorper",
-            "Faith Hart",
-            "Korea",
-            "Terran",
-            45,
-            135
-        ],
-        [
-            "arcu",
-            "Sacha Dodson",
-            "Europe",
-            "Terran",
-            228,
-            463
-        ],
-        [
-            "erat",
-            "Jada Noel",
-            "Europe",
-            "Zerg",
-            196,
-            243
-        ],
-        [
-            "vulputate",
-            "Rinah Foley",
-            "Europe",
-            "Terran",
-            391,
-            428
-        ],
-        [
-            "Fusce",
-            "Noble Washington",
-            "Europe",
-            "Terran",
-            174,
-            492
-        ],
-        [
-            "malesuada",
-            "Brynn Hopkins",
-            "America",
-            "Terran",
-            162,
-            66
-        ],
-        [
-            "enim",
-            "Garth Larsen",
-            "Europe",
-            "Zerg",
-            219,
-            417
-        ],
-        [
-            "felis",
-            "Zelda Mendez",
-            "Europe",
-            "Protoss",
-            168,
-            131
-        ],
-        [
-            "neque",
-            "Tad Mcmillan",
-            "Europe",
-            "Protoss",
-            426,
-            307
-        ],
-        [
-            "turpis",
-            "Jemima Walsh",
-            "America",
-            "Protoss",
-            81,
-            280
-        ],
-        [
-            "dapibus",
-            "Amery Zamora",
-            "Europe",
-            "Terran",
-            449,
-            8
-        ],
-        [
-            "turpis",
-            "Christopher Gonzalez",
-            "Europe",
-            "Protoss",
-            165,
-            72
-        ],
-        [
-            "metus",
-            "Samson Yates",
-            "Europe",
-            "Zerg",
-            373,
-            21
-        ],
+        [ "tempus", "Palmer Barton", "Korea", "Terran", 489, 249 ],
+        [ "Cras", "Quamar Benson", "Korea", "Protoss", 451, 27 ],
+        [ "Aliquam", "Ali Robbins", "Europe", "Zerg", 445, 306 ],
+        [ "non", "Alan Osborne", "Korea", "Terran", 36, 455 ],
+        [ "neque", "Martena Sykes", "Europe", "Zerg", 94, 426 ],
+        [ "Phasellus", "Lana Reed", "Europe", "Protoss", 423, 186 ],
+        [ "mauris", "Gil Dyer", "Korea", "Zerg", 87, 290 ],
+        [ "mi", "Basil Moses", "America", "Zerg", 486, 95 ],
+        [ "nisl", "Cullen Hale", "Korea", "Terran", 372, 359 ],
+        [ "sit", "Roary Martin", "Korea", "Protoss", 406, 111 ],
+        [ "ullamcorper", "Faith Hart", "Korea", "Terran", 45, 135 ],
+        [ "arcu", "Sacha Dodson", "Europe", "Terran", 228, 463 ],
+        [ "erat", "Jada Noel", "Europe", "Zerg", 196, 243 ],
+        [ "vulputate", "Rinah Foley", "Europe", "Terran", 391, 428 ],
+        [ "Fusce", "Noble Washington", "Europe", "Terran", 174, 492 ],
+        [ "malesuada", "Brynn Hopkins", "America", "Terran", 162, 66 ],
+        [ "enim", "Garth Larsen", "Europe", "Zerg", 219, 417 ],
+        [ "felis", "Zelda Mendez", "Europe", "Protoss", 168, 131 ],
+        [ "neque", "Tad Mcmillan", "Europe", "Protoss", 426, 307 ],
+        [ "turpis", "Jemima Walsh", "America", "Protoss", 81, 280 ],
+        [ "dapibus", "Amery Zamora", "Europe", "Terran", 449, 8 ],
+        [ "turpis", "Christopher Gonzalez", "Europe", "Protoss", 165, 72 ],
+        [ "metus", "Samson Yates", "Europe", "Zerg", 373, 21 ],
         [
             "facilisis",
             "Regan Cooper",

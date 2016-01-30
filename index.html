@@ -20,7 +20,9 @@
 			</ul>
 		</div> <!-- overall stats -->
 		<div class="player-ranking">
-			<div class="filter">Filter By: </div>
+			<div class="sort">Sort By:
+				<button ng-click="regionSort">Region</button>
+			 </div>
 			<table class="table">
 				<thead>
 					<td ng-repeat="info in top">{{info}}</td>
