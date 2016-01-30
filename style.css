@@ -41,6 +41,12 @@ body {
 	list-style: none;
 	margin-right: 50px;
 }
+.filter {
+	width: 90%;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
 .player-ranking {
 	width: 97%;
 	min-height: 75vh;
@@ -49,5 +55,7 @@ body {
 	background-color: #666;
 	padding: 10px;
 	margin: 0 auto;
-
+}
+.table {
+	background-color: #fff;
 }

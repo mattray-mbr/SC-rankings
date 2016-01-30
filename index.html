@@ -21,6 +21,16 @@
 		</div> <!-- overall stats -->
 		<div class="player-ranking">
 			<div class="filter">Filter By: </div>
+			<table class="table">
+				<thead>
+					<td ng-repeat="info in top">{{info}}</td>
+				</thead>
+				<tbody>
+					<tr ng-repeat="data in all">{{data}}
+						<td ng-repeat="i in data">{{i}}</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </body>
