@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="starcraftApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-controller="starController">
+	<div class="container">
+		<h1 class="title">StarCraft&#8545; Rankings</h1>
+		<div class="overall">
+			<h2 class="sub-head">Overall Stats</h2>
+			<ul class="total-stats">
+				<li>Total Players: {{totalPlayers}}</li>
+				<li>Games Played: {{totalGames}}</li>
+				<li>Most Popular Race: {{bestRace}}</li>
+			</ul>
+		</div> <!-- overall stats -->
+		<div class="player-ranking">
+			<div class="filter">Filter By: </div>
+		</div>
+	</div>
+</body>
+</html>

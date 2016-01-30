@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #1acbed;
+}
+.container {
+	width: 95%;
+	margin: 20px auto;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: #ebebeb;
+	min-height: 100vh;
+}
+.title {
+	margin-top: 20px;
+	font-size: 45px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: Georgia;
+}
+.overall {
+	height: 70px;
+	width: 90%;
+	background-color: #666;
+	border: 1px solid #1acbed;
+	border-radius: 5px;
+	margin: 20px auto;
+	padding: 5px 10px;
+	color: #fff;
+}
+.sub-head {
+	margin: 0;
+}
+.total-stats {
+	float: left;
+	margin-top: 5px;
+}
+.total-stats li {
+	float: left;
+	list-style: none;
+	margin-right: 50px;
+}
+.player-ranking {
+	width: 97%;
+	min-height: 75vh;
+	border: 2px solid #1acbed;
+	border-radius: 5px;
+	background-color: #666;
+	padding: 10px;
+	margin: 0 auto;
+
+}
